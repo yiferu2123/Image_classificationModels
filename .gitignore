@@ -1,0 +1,7 @@
+# Ignore everything by default
+*
+
+# Then un-ignore only the files we want to push
+!.gitignore
+!README.md
+!face_classification_colab.ipynb
