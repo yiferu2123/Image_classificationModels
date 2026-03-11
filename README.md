@@ -216,19 +216,7 @@ else:                      →  Class 2 (Yifer absent)
 
 ---
 
-## 🛠️ Known Issues & Fixes Applied
 
-| Issue | Root Cause | Fix Applied |
-|-------|-----------|-------------|
-| `Invalid model_name passed - face_detector/yolov8` | Wrong detector name | Changed `yolov8` → **`yolov8n`** |
-| `KerasTensor cannot be used as input` (RetinaFace) | Keras v3 incompatibility | Set `TF_USE_LEGACY_KERAS=1` before DeepFace import |
-| `module 'mediapipe' has no attribute 'solutions'` | Broken in newer Colab | Removed mediapipe from detector list |
-| `NameError: name 'time' is not defined` | Missing import | `import time` added to Step 2 |
-| Bounding boxes drawn in wrong position | Scale mismatch between display size and native pixels | BB coords now drawn on the **native pixel array** |
-| All photos classified as Class 2 | Threshold too low + no L2 normalization | Raised threshold to 0.65 + added L2-normalize step |
-| `class_1/` or `class_2/` not found on Drive | Folders not created | `os.makedirs(..., exist_ok=True)` added in Step 11 |
-
----
 
 ## 📊 Output Files
 
