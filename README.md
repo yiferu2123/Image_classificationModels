@@ -1,6 +1,6 @@
 # 🎯 Yifer Face Classification — Colab GPU Pipeline
 
-> **Automatically sort group photos into two classes based on whether a specific person (Yifer) appears in them — using ArcFace embeddings, YOLOv8n face detection, and GPU-accelerated inference on Google Colab.**
+> **Automatically sort group photos into two classes based on whether a specific person (Yiferu) appears in them — using ArcFace embeddings, YOLOv8n face detection, and GPU-accelerated inference on Google Colab.**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
